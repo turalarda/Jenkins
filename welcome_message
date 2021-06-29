@@ -8,5 +8,17 @@ pipeline {
                 echo 'Welcome to Kloia Bootcamp!'
             }
         }
+        stage('run-parallel-branches') {
+            steps {
+                parallel(
+                    a: {
+                        echo "This is paralel stage a"
+            },
+                    b: {
+                        echo "This is paralel stage b"
+            }
+           
+        }
+      }
     }
-}
+  }
