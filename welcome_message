@@ -17,7 +17,7 @@ pipeline {
                     b: {
                         echo "This is paralel stage b"
             }
-           
+           )
         }
       }
     }
